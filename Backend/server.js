@@ -236,6 +236,26 @@ setInterval(checkAndSendAIReminders, 30 * 60 * 1000);
 // Run AI check on startup
 setTimeout(checkAndSendAIReminders, 5000); // 5 seconds after startup
 
+// ============= ROOT ROUTE =============
+
+// Root route - API status and welcome message
+app.get('/', (req, res) => {
+    res.json({
+        message: 'BrainBoard API Server',
+        status: 'running',
+        version: '1.0.0',
+        endpoints: {
+            notifications: '/api/notifications',
+            messages: '/api/messages',
+            tasks: '/api/tasks',
+            search: '/api/search',
+            stats: '/api/stats',
+            health: '/api/health'
+        },
+        documentation: 'Visit /api/health for server status'
+    });
+});
+
 // ============= NOTIFICATIONS CRUD =============
 
 // GET all notifications
