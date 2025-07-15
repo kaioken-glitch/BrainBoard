@@ -18,7 +18,7 @@ Add these environment variables in Render dashboard:
 ```
 NODE_ENV=production
 PORT=10000
-FRONTEND_URL=https://your-frontend-app.onrender.com
+FRONTEND_URL=https://brainboard-oe9h.onrender.com
 ```
 
 ### 3. After Backend Deployment:
@@ -29,7 +29,7 @@ FRONTEND_URL=https://your-frontend-app.onrender.com
 ### 1. Update Frontend Environment:
 Update the `.env` file in Frontend folder:
 ```
-VITE_API_BASE_URL=https://brainboard-lzvg.onrender.com/api
+VITE_API_BASE_URL=https://brainboard-backend.onrender.com/api
 ```
 
 ### 2. Create Render Static Site for Frontend:
@@ -45,7 +45,7 @@ VITE_API_BASE_URL=https://brainboard-lzvg.onrender.com/api
 ### 3. Update Backend CORS:
 After frontend deployment, update the backend environment variable:
 ```
-FRONTEND_URL=https://your-frontend-app.onrender.com
+FRONTEND_URL=https://brainboard-oe9h.onrender.com
 ```
 
 ## Important Notes:
@@ -67,7 +67,7 @@ FRONTEND_URL=https://your-frontend-app.onrender.com
 
 ## Testing Deployment:
 1. Deploy backend first
-2. Test API endpoints: `https://brainboard-lzvg.onrender.com/api/tasks`
+2. Test API endpoints: `https://brainboard-backend.onrender.com/api/tasks`
 3. Update frontend environment variables
 4. Deploy frontend
 5. Test full application functionality
