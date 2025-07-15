@@ -21,17 +21,29 @@ const corsOptions = {
         if (!origin) return callback(null, true);
         
         const allowedOrigins = process.env.FRONTEND_URL 
-            ? process.env.FRONTEND_URL.split(',')
-            : ['http://localhost:3000', 'http://localhost:5173'];
+            ? process.env.FRONTEND_URL.split(',').map(url => url.trim())
+            : ['http://localhost:3000', 'http://localhost:5173', 'https://brainboard-oe9h.onrender.com'];
+            
+        console.log('CORS Check - Origin:', origin);
+        console.log('CORS Check - Allowed origins:', allowedOrigins);
             
         if (allowedOrigins.indexOf(origin) !== -1) {
+            console.log('CORS - Origin allowed');
             callback(null, true);
         } else {
-            callback(new Error('Not allowed by CORS'));
+            console.log('CORS - Origin blocked');
+            // For development, allow any origin temporarily
+            if (process.env.NODE_ENV === 'development') {
+                callback(null, true);
+            } else {
+                callback(new Error('Not allowed by CORS'));
+            }
         }
     },
     credentials: true,
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 };
 
 app.use(cors(corsOptions));
