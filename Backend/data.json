@@ -1,0 +1,74 @@
+{
+  "notifications": [],
+  "messages": [
+    {
+      "id": "msg_ai_morning_001",
+      "type": "ai_reminder",
+      "sender": "BrainBoard AI",
+      "title": "🌅 Good Morning Reminder",
+      "message": "Good morning! 🌅 Ready to conquer today's challenges? Your tasks are waiting for your brilliance!\n\nI noticed you have some important tasks lined up! 📋 Breaking them into smaller steps makes everything manageable.\n\nYou have 2 tasks ready for your attention. Start with small steps and build momentum! 🚀",
+      "time": "Just now",
+      "isRead": true,
+      "createdAt": "2025-07-15T08:30:00.000Z",
+      "aiGenerated": true,
+      "mood": "energetic",
+      "updatedAt": "2025-07-15T14:30:29.156Z"
+    },
+    {
+      "id": "msg_ai_midday_001",
+      "type": "ai_reminder",
+      "sender": "BrainBoard AI",
+      "title": "🌞 Midday Motivation",
+      "message": "How's your day going so far? 💫\n\nAmazing! You've completed 1 task today. You still have 2 tasks to tackle.\n\nRemember: Progress over perfection! Keep that momentum going! 💪",
+      "time": "3 hours ago",
+      "isRead": true,
+      "createdAt": "2025-07-15T12:00:00.000Z",
+      "aiGenerated": true,
+      "mood": "supportive",
+      "updatedAt": "2025-07-15T14:30:29.156Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_be335a12-7899-494a-a4b8-7536867ad6ef",
+      "title": "Create a Full fledged React App",
+      "description": "Practice CRUD and creating a full app using React Framework",
+      "status": "completed",
+      "priority": "medium",
+      "dueDate": "2025-07-16",
+      "createdAt": "2025-07-15T14:16:58.407Z",
+      "updatedAt": "2025-07-15T14:30:39.507Z"
+    },
+    {
+      "id": "task_987942d6-8c88-4963-97cc-3e24205c2e56",
+      "title": "Complete leetcode challenge",
+      "description": "Complete one leet code a day",
+      "status": "pending",
+      "priority": "medium",
+      "dueDate": "2025-07-15",
+      "createdAt": "2025-07-15T13:12:30.147Z",
+      "updatedAt": "2025-07-15T13:58:37.590Z"
+    },
+    {
+      "id": "task_0e7ec4fe-fc7c-494b-b6ad-47ff0c00045c",
+      "title": "Ship A React App",
+      "description": "To create a full React app with CRUD API and login Creds\n",
+      "status": "completed",
+      "priority": "high",
+      "dueDate": "2025-07-25",
+      "createdAt": "2025-07-14T17:30:49.911Z",
+      "updatedAt": "2025-07-15T13:11:32.121Z"
+    },
+    {
+      "id": "task_bfb3e96a-4dcb-45fe-874a-8a52183c87ea",
+      "title": "Pseudo Code",
+      "description": "To Learn how to write functions using pseudo commands",
+      "status": "in-progress",
+      "priority": "medium",
+      "dueDate": "2025-07-15",
+      "createdAt": "2025-07-14T17:15:32.784Z",
+      "updatedAt": "2025-07-15T13:58:40.207Z"
+    }
+  ],
+  "searchData": []
+}
